@@ -9,4 +9,6 @@ abstract class _Todo with Store {
   @observable
   String description = "";
 
+  @observable
+  bool done = false;
 }

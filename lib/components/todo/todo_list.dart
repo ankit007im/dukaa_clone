@@ -22,6 +22,14 @@ abstract class _TodoList with Store {
   }
 
   @computed
+  ObservableList<Todo> get pendingTodos =>
+      ObservableList.of(todos.where((todo) => todo.done != true));
+
+  @computed
+  ObservableList<Todo> get completedTodos =>
+      ObservableList.of(todos.where((todo) => todo.done == true));
+
+  @computed
   String get itemsDescription {
     if (todos.isEmpty) {
       return "There are no Todos here. Why don't you add one?.";

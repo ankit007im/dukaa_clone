@@ -61,8 +61,8 @@ class ViewTodos extends StatelessWidget {
                 return Observer(
                   builder: (_) => CheckboxListTile(
                     controlAffinity: ListTileControlAffinity.leading,
-                    onChanged: (flag) => todo.description,
-                    value: true,
+                    onChanged: (bool flag) => todo.done = flag,
+                    value: todo.done,
                     title: Row(
                       children: <Widget>[
                       Expanded(
