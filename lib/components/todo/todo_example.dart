@@ -63,8 +63,7 @@ class ViewTodos extends StatelessWidget {
                     controlAffinity: ListTileControlAffinity.leading,
                     onChanged: (bool flag) => todo.done = flag,
                     value: todo.done,
-                    title: Row(
-                      children: <Widget>[
+                    title: Row(children: <Widget>[
                       Expanded(
                         child: Text(todo.description,
                             overflow: TextOverflow.ellipsis),
