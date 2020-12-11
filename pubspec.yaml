@@ -28,10 +28,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
 
-  # firbase plugins
-  cloud_firestore: any
-  firebase_auth:
+  get:
 
+  # firbase plugins
+  cloud_firestore:
+  # firebase_auth:
 
 dev_dependencies:
   flutter_test:

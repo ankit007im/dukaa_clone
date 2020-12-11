@@ -1,5 +1,7 @@
-import 'package:dukaan_clone/pages/SplashScreen.dart';
+import 'package:dukaan_clone/screen/counterScreen.dart';
+import 'package:dukaan_clone/screen/todoScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,10 +9,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
-        home: Scaffold(
-          body: SplashScreen(),
-        ));
+    return GetMaterialApp(
+        title: 'Flutter Demo', home: 
+        // CounterApp(title: "Counter App")
+         TodoApp(title: "Todo App")
+        );
   }
 }
