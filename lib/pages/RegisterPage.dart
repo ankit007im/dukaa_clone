@@ -1,4 +1,4 @@
-import 'package:dukaan_clone/components/authController.dart';
+import 'package:dukaan_clone/controller/authController.dart';
 import 'package:dukaan_clone/pages/Otp.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,7 +22,7 @@ class RegisterNumber extends StatelessWidget {
         onPressed: () {
           print(authController.phoneNumberController.text);
           authController.verifyPhoneNumber();
-          Get.to(GetOtp());
+          // Get.to(GetOtp());
         },
         child: Icon(
           Icons.arrow_forward,

@@ -31,7 +31,8 @@ dependencies:
   # firbase plugins
   cloud_firestore: ^0.14.4
   firebase_auth:
-  pin_code_fields:
+  # pin_code_fields:
+  pinput:
   get:
 
 dev_dependencies:
