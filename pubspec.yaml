@@ -30,8 +30,9 @@ dependencies:
 
   # firbase plugins
   cloud_firestore: ^0.14.4
-  firebase_auth: 
-  get: 
+  firebase_auth:
+  pin_code_fields:
+  get:
 
 dev_dependencies:
   flutter_test:
