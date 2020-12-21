@@ -11,10 +11,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home PAge"),
         actions: [
-          IconButton(icon: Icon(Icons.logout), onPressed: () async{
-            await controller.auth.signOut();
-            Get.offAll(RegisterNumber());
-          })
+          IconButton(
+              icon: Icon(Icons.logout),
+              onPressed: () async {
+                controller.logout();
+              })
         ],
       ),
       body: Container(

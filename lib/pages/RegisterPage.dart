@@ -7,7 +7,6 @@ class RegisterNumber extends StatelessWidget {
   final AuthController authController = Get.put(AuthController());
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text("Register"),
@@ -19,10 +18,10 @@ class RegisterNumber extends StatelessWidget {
         controller: authController.phoneNumberController,
       )),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
+        onPressed: () async {
           print(authController.phoneNumberController.text);
-          authController.verifyPhoneNumber();
-          // Get.to(GetOtp());
+          await authController.verifyPhoneNumber();
+          Get.to(GetOtp());
         },
         child: Icon(
           Icons.arrow_forward,
